@@ -28,9 +28,10 @@ client.on("message", async (message) => {
   switch (command) {
     case "help":
       message.channel.send(
-        new Discord.MessageEmbed().setColor('RANDOM').setTitle(
-          `These are my list of supported commands:`
-        ).setDescription(` **$help** - Display the help menu
+        new Discord.MessageEmbed()
+          .setColor("RANDOM")
+          .setTitle(`These are my list of supported commands:`)
+          .setDescription(` **$help** - Display the help menu
       **$poll <question>** - Generates a poll for the specified question
       **$meme** - Generate a random meme
       **$setnick <User> <nickname>** - Changes the nickname of the specified user
